@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1000;
+  background-attachment: fixed;
+}
+
+.logocontainer {
+  text-align: center;
+}
+.intro {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.intro h1 {
+  font-size: 62px;
+  font-weight: 500px;
+}
+
+.intro p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.bio {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/nebula.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bio h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.bio p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.biorow {
+  z-index: 9;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biocol {
+  width: 80%;
+  padding-bottom: 10px;
+  flex-basis: 45%;
+  color: black;
+  background: #dedede;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.biocol:hover {
+  color: white;
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.skills {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/stock.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  background-size: 100%;
+}
+.skills h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+}
+.skills p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.skillrow {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skillcol {
+  flex-basis: 45%;
+  color: white;
+  background: rgba(255, 0, 0, 100);
+  border-radius: 25px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.skillcol:hover {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.7);
+}
+
+.mywork {
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Images/forest.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.mywork h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+}
+.mywork p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.myworkcol {
+  /*flex: 1;*/
+  flex-basis: 45%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.myworkrow {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.myworkcol img {
+  width: 100%;
+  height: 100%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  font-size: 26px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+
+.contactme {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  background-size: 100%;
+  border-radius: 20px;
+}
+
+.contactme h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contactcard {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 25px;
+  background-color: black;
+  flex: 1;
+  transition: 0.3s all ease;
+}
+
+.contactcard:hover {
+  flex: 2;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.author {
+  color: black;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.mygamesheader {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mygamesintro {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.mygamesintro h1 {
+  font-size: 62px;
+  font-weight: 500px;
+}
+
+.mygamesintro p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.node {
+  background-color: rgba(255, 0, 0, 0.7);
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.node h1 {
+  font-family: "Righteous", sans-serif;
+  font-size: 62px;
+  font-weight: 500px;
+}
+
+.node p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.stray {
+  background-color: rgba(255, 0, 0, 0.7);
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.stray h1 {
+  font-family: "Righteous", sans-serif;
+  font-size: 62px;
+  font-weight: 500px;
+}
+
+.stray p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.mambang {
+  background-color: rgba(255, 0, 0, 0.7);
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.mambang h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 62px;
+  font-weight: 500px;
+}
+
+.mambang p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.credit {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.credit a {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.mambangbtn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.mambangbtn:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .video-container {
+    width: 10%;
+    height: 10%;
+    align-items: center;
+  }
+
+  .video-container video {
+    width: 10%;
+    height: 10%;
+    object-fit: scale-down;
+  }
+
+  .biocol {
+    flex-direction: column;
+  }
+  .intro p {
+    margin: 10px 0 40px;
+    font-size: 12px;
+    color: white;
+  }
+  .mygamesintro p {
+    margin: 10px 0 40px;
+    font-size: 12px;
+    color: white;
+  }
+  .logocontainer img {
+    height: 50%;
+    width: 50%;
+  }
+  .header {
+    background-size: 100% 100%;
+  }
+  .skillrow {
+    flex-direction: column;
+  }
+  .myworkrow {
+    flex-direction: column;
+  }
+  .layer {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    font-size: 26px;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .mambang h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 55px;
+    font-weight: 500px;
+  }
+  .node h1 {
+    font-family: "Righteous", sans-serif;
+    font-size: 55px;
+    font-weight: 500px;
+  }
+  .stray h1 {
+    font-family: "Righteous", sans-serif;
+    font-size: 55px;
+    font-weight: 500px;
+  }
+}
